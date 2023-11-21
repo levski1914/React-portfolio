@@ -1,0 +1,58 @@
+.navbar-brand span{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2rem !important;
+}
+
+.main{
+    padding: 0 !important;
+}
+
+.mainPage{
+    padding: 0 !important;
+    background: url("https://wallpapers.com/images/hd/mercedes-benz-clase-e-qjm3g17j4tkn2h1m.jpg");
+    width: 100%;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1
+    ;
+}
+
+
+.classes li{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    border: 1px solid;
+    position: relative;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+
+.classes li img{
+    width: 160px;
+    height:100px;
+    object-fit: cover;
+    display: none;
+    position: absolute;
+    top: 100%;
+    z-index:1000
+}
+
+.classes li:hover img{
+    display: block;
+}
+
+.mainPage .txt h1{
+    color: #fff;
+    font-size: 5rem !important;
+}
+
+.nav-item img{
+    filter: drop-shadow(5px 5px 5px #dddddd);
+}

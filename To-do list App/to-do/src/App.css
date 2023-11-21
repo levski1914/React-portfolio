@@ -1,0 +1,78 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+li{
+  list-style: none;
+}
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.Todo{
+  border: 1px solid;
+  /* text-align: center; */
+  background-color: #fff;
+  width: 800px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.todo-header{
+  width: 80%;
+}
+.Todo input{
+  width: 100%;
+  padding: 1rem .5rem;
+  border-radius: 10px;
+  border: 1px solid #CFD3D6;
+  margin-bottom: 1rem;
+}
+
+#btn{
+  width: 100%;
+  background-color: #16A3B7;
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  padding: 1rem 0;
+}
+.todo-body{
+  width: 80%;
+  text-align: center;
+}
+.btns{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.btns .btn{
+  padding: 1rem;
+  background-color: #16A3B7;
+  border: 0;
+  border-radius: 10px;
+  color: #fff;
+  width: 30%;
+}
+
+.list{
+ margin: 1rem 0;
+  text-align: left;
+}
+.list .item{
+  border: 1px solid #CFD3D6;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item .delete{
+  color: red;
+  cursor: pointer;
+}
