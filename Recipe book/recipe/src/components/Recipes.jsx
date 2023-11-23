@@ -7,6 +7,7 @@ import {
   MDBCardImage,
   MDBCardText,
   MDBBtn,
+  MDBTextArea,
 } from "mdb-react-ui-kit";
 import { MDBIcon } from "mdb-react-ui-kit";
 
@@ -22,7 +23,10 @@ const Recipes = ({
   return (
     <>
       <MDBCol size="3">
-        <MDBCard className="h-100 mt-5 border" style={{ maxWidth: "20rem" }}>
+        <MDBCard
+          className="h-100 mt-5 border"
+          style={{ maxWidth: "20rem", maxHeight: "320px" }}
+        >
           <MDBCardBody>
             <MDBCardTitle>{title}</MDBCardTitle>
             <MDBCardText>
@@ -31,7 +35,7 @@ const Recipes = ({
                 Read more
               </Link>
             </MDBCardText>
-            <span>
+            <span className="text-center">
               <MDBBtn className="mt-1" tag="a" onClick={() => handleDelete(id)}>
                 <MDBIcon
                   fas
@@ -41,7 +45,12 @@ const Recipes = ({
                 />
               </MDBBtn>
               <Link to={`/editRecipe/${id}`}>
-                <MDBIcon fas icon="trash" />
+                <MDBIcon
+                  fas
+                  icon="edit"
+                  style={{ color: "#55acee", marginLeft: "15px" }}
+                  size="lg"
+                />
               </Link>
             </span>
           </MDBCardBody>

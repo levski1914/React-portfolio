@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { MDBValidation, MDBInput, MDBBtn } from "mdb-react-ui-kit";
+import { MDBValidation, MDBInput, MDBBtn, MDBTextArea } from "mdb-react-ui-kit";
 import { toast } from "react-toastify";
 import { useNavigate, useParams } from "react-router-dom";
 
@@ -88,7 +88,9 @@ const Addrecipe = () => {
         noValidate
         onSubmit={handleSubmit}
       >
-        <p className="fs-2 fw-bold">{editMode ? "Update Blog" : "Add blog"}</p>
+        <p className="fs-2 text-center fw-bold">
+          {editMode ? "Update Blog" : "Add blog"}
+        </p>
         <div
           style={{
             margin: "auto",
@@ -108,7 +110,7 @@ const Addrecipe = () => {
             invalid
           />
           <br />
-          <MDBInput
+          <MDBTextArea
             value={description || ""}
             name="description"
             type="textarea"
