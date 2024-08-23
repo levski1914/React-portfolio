@@ -1,0 +1,29 @@
+{
+  "students": [
+    {
+      "studentName": "test",
+      "grade": "test",
+      "category": "Front-end",
+      "age": "test",
+      "date": "12/03/2023",
+      "id": 1
+    },
+    {
+      "studentName": "sad",
+      "grade": "asd",
+      "category": "Front-end",
+      "age": "asd",
+      "date": "12/05/2023",
+      "id": 2
+    },
+    {
+      "studentName": "new student",
+      "grade": "7th",
+      "category": "Front-end",
+      "age": "20",
+      "date": "12/08/2023",
+      "id": 3
+    }
+  ],
+  "teachers": []
+}

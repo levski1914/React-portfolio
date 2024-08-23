@@ -1,0 +1,56 @@
+.box{
+    transition: all 3s;
+    object-fit: cover;
+}
+.circle{
+    background-image: linear-gradient(red,rgb(228, 95, 95),white);
+    width: 30px;
+    height: 30px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 50%;
+    border-width: 0;
+    animation: rotateCircle 2s linear infinite;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}
+
+.circle::before{
+    content: " ";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    /* background-color: blue; */
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1px;
+    display: table;
+    animation: rotateCircle 2s linear infinite reverse;
+}
+
+@keyframes rotateCircle {
+    0%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

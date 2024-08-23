@@ -1,0 +1,47 @@
+.categories{
+    max-width: 1272px;
+    border: 1px solid red;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    gap: 30px;
+    position: relative;
+}
+
+.categories .card{
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+    
+}
+
+
+.navi{
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    left: 0px;
+    
+    top: 50%;
+    overflow: visible;
+}
+
+.btn-left{
+    background-color: #fff;
+    left: -80px;
+    padding: 1rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.btn-right{
+    position: relative;
+    background-color: #fff;
+    right: -30px;
+    cursor: pointer;
+    padding: 1rem;
+}

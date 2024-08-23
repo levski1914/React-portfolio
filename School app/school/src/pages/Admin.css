@@ -1,0 +1,23 @@
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.col{
+    border: 1px solid;
+    text-align: center;
+}
+
+.student-list{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.student-list li{
+    width: 50%;
+    list-style: none;
+}

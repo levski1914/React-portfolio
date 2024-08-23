@@ -1,0 +1,12 @@
+{
+  "teachers": {
+    "teachers": []
+  },
+  "students": {
+    "studentName": "test test",
+    "grade": "20",
+    "category": "Back-end",
+    "age": "20",
+    "date": "12/05/2023"
+  }
+}
